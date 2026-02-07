@@ -1,7 +1,7 @@
 // Sam Chatbot Widget - JavaScript
 class SamChatbot {
     constructor() {
-        this.apiUrl = 'https://yourusername.github.io/samiksha-tech-chatbot/data.json';
+        this.apiUrl = 'https://abhishekpatel111.github.io/sam/data.json';
         this.knowledgeBase = null;
         this.initialize();
     }
@@ -88,12 +88,12 @@ class SamChatbot {
     injectStyles() {
         // CSS is loaded externally from chat-widget.css
         // If you want to inject dynamically, uncomment below:
-        /*
+        
         const style = document.createElement('link');
         style.rel = 'stylesheet';
-        style.href = 'https://yourusername.github.io/samiksha-tech-chatbot/chat-widget.css';
+        style.href = 'https://abhishekpatel111.github.io/sam/chat-widget.css';
         document.head.appendChild(style);
-        */
+        
     }
 
     addEventListeners() {
@@ -367,4 +367,5 @@ class SamChatbot {
 // Initialize chatbot when page loads
 document.addEventListener('DOMContentLoaded', () => {
     window.samChatbot = new SamChatbot();
+
 });
