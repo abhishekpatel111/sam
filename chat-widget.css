@@ -1,4 +1,4 @@
-/* Sam Chatbot Widget Styles */
+/* Sam Chatbot Widget Style */
 #sam-chatbot-container {
     position: fixed;
     bottom: 20px;
@@ -344,4 +344,5 @@
 
 .sam-color-secondary {
     color: #764ba2;
+
 }
