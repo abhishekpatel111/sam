@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Chatbot Widget - Samiksha Tech Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .container {
+            background: #f8f9ff;
+            padding: 40px;
+            border-radius: 20px;
+            border: 3px solid #667eea;
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .step {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .highlight {
+            background: #fffacd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Sam Chatbot Widget - Installation Guide</h1>
+        
+        <div class="step">
+            <h2>📁 GitHub Repository Structure</h2>
+            <p>Your GitHub repository should have these files:</p>
+            <div class="code-block">
+samiksha-tech-chatbot/
+├── data.json           # Your knowledge base (already created)
+├── chat-widget.css     # Chatbot styles
+├── chat-widget.js      # Chatbot functionality
+├── chat-widget.html    # This file (embed instructions)
+└── README.md           # Documentation
+            </div>
+        </div>
+        
+        <div class="step">
+            <h2>🚀 Step 1: Enable GitHub Pages</h2>
+            <ol>
+                <li>Go to your GitHub repository</li>
+                <li>Click on <strong>Settings</strong> → <strong>Pages</strong></li>
+                <li>Under "Source", select <strong>main branch</strong></li>
+                <li>Select <strong>/ (root)</strong> folder</li>
+                <li>Click <strong>Save</strong></li>
+                <li>Wait a few minutes for deployment</li>
+                <li>Your site will be available at: <code>https://[yourusername].github.io/samiksha-tech-chatbot/</code></li>
+            </ol>
+        </div>
+        
+        <div class="step">
+            <h2>🔧 Step 2: Add Chatbot to Your Website</h2>
+            <p>Add this code to your website just before the closing <code>&lt;/body&gt;</code> tag:</p>
+            <div class="code-block">
+&lt;!-- Sam Chatbot Widget --&gt;
+&lt;link rel="stylesheet" href="https://[yourusername].github.io/samiksha-tech-chatbot/chat-widget.css"&gt;
+
+&lt;div id="sam-chatbot-container"&gt;
+    &lt;button id="sam-toggle-btn" title="Chat with Sam"&gt;
+        &lt;span&gt;🤖&lt;/span&gt;
+    &lt;/button&gt;
+    
+    &lt;div id="sam-chat-window" class="sam-hidden"&gt;
+        &lt;div class="sam-chat-header"&gt;
+            &lt;h3&gt;
+                &lt;div class="sam-chat-header-avatar"&gt;S&lt;/div&gt;
+                Sam - AI Assistant
+            &lt;/h3&gt;
+            &lt;button id="sam-close-btn" title="Close"&gt;×&lt;/button&gt;
+        &lt;/div&gt;
+        
+        &lt;div id="sam-chat-messages"&gt;
+            &lt;div class="sam-message sam-bot-message"&gt;
+                Hello! I'm Sam from Samiksha Tech Solutions. How can I help you?
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="sam-quick-replies" id="sam-quick-replies"&gt;
+            &lt;div class="sam-quick-reply" data-question="What services do you offer?"&gt;Our Services&lt;/div&gt;
+            &lt;div class="sam-quick-reply" data-question="Tell me about your products"&gt;Products&lt;/div&gt;
+            &lt;div class="sam-quick-reply" data-question="How to contact you?"&gt;Contact Us&lt;/div&gt;
+            &lt;div class="sam-quick-reply" data-question="What is your pricing?"&gt;Pricing&lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="sam-chat-input-area"&gt;
+            &lt;input type="text" id="sam-user-input" placeholder="Type your question here..." autocomplete="off"&gt;
+            &lt;button id="sam-send-btn"&gt;Send&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src="https://[yourusername].github.io/samiksha-tech-chatbot/chat-widget.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    // Initialize chatbot
+    document.addEventListener('DOMContentLoaded', function() {
+        window.samChatbot = new SamChatbot();
+    });
+&lt;/script&gt;
+            </div>
+            
+            <p><strong>Important:</strong> Replace <code>[yourusername]</code> with your actual GitHub username.</p>
+        </div>
+        
+        <div class="step">
+            <h2>🎨 Step 3: Customize Appearance</h2>
+            <p>Edit <code>chat-widget.css</code> to match your brand colors:</p>
+            <div class="code-block">
+/* Change these colors in chat-widget.css */
+:root {
+    --primary-color: #667eea;    /* Change to your brand color */
+    --secondary-color: #764ba2;  /* Change to your secondary color */
+}
+            </div>
+        </div>
+        
+        <div class="step">
+            <h2>📝 Step 4: Update Knowledge Base</h2>
+            <p>Edit <code>data.json</code> to add/update your content:</p>
+            <ul>
+                <li>Company information</li>
+                <li>Products & Services details</li>
+                <li>FAQ answers</li>
+                <li>Contact information</li>
+                <li>Pricing details</li>
+            </ul>
+            <p><strong>Pro Tip:</strong> Use GitHub's web interface to edit files directly in your browser.</p>
+        </div>
+        
+        <div class="step">
+            <h2>✅ Step 5: Test Your Chatbot</h2>
+            <ol>
+                <li>Visit your GitHub Pages URL</li>
+                <li>Click the chat button (bottom-right)</li>
+                <li>Try these questions:
+                    <ul>
+                        <li>"What services do you offer?"</li>
+                        <li>"Tell me about your company"</li>
+                        <li>"How can I contact you?"</li>
+                        <li>"What is your pricing?"</li>
+                    </ul>
+                </li>
+                <li>Test on mobile devices</li>
+            </ol>
+        </div>
+        
+        <div class="step">
+            <h2>🔗 Step 6: Embed on Your Website</h2>
+            <p>For different platforms:</p>
+            
+            <h3>WordPress:</h3>
+            <div class="code-block">
+1. Go to Appearance → Theme Editor
+2. Edit footer.php
+3. Paste the embed code before &lt;/body&gt;
+            </div>
+            
+            <h3>Wix:</h3>
+            <div class="code-block">
+1. Go to Settings → Custom Code
+2. Add code to Footer section
+3. Set load type to "Body - end"
+            </div>
+            
+            <h3>Shopify:</h3>
+            <div class="code-block">
+1. Go to Online Store → Themes → Actions → Edit code
+2. Edit theme.liquid
+3. Paste code before closing &lt;/body&gt; tag
+            </div>
+            
+            <h3>HTML Website:</h3>
+            <div class="code-block">
+Just paste the code before &lt;/body&gt; in all pages
+            </div>
+        </div>
+        
+        <div class="step">
+            <h2>🚨 Troubleshooting</h2>
+            <ul>
+                <li><strong>Chatbot not appearing:</strong> Check browser console for errors</li>
+                <li><strong>Styles not loading:</strong> Verify CSS URL is correct</li>
+                <li><strong>No responses:</strong> Check if data.json is accessible</li>
+                <li><strong>Mobile issues:</strong> Test with responsive design mode</li>
+                <li><strong>Update not reflecting:</strong> Clear browser cache (Ctrl+F5)</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <h2>🎯 Quick Test URLs</h2>
+            <div class="code-block">
+<!-- Test if files are accessible -->
+CSS: https://[yourusername].github.io/samiksha-tech-chatbot/chat-widget.css
+JS:  https://[yourusername].github.io/samiksha-tech-chatbot/chat-widget.js
+JSON: https://[yourusername].github.io/samiksha-tech-chatbot/data.json
+            </div>
+            <p>Open these URLs in your browser to verify they load correctly.</p>
+        </div>
+        
+        <div class="step">
+            <h2>📊 Analytics Integration (Optional)</h2>
+            <p>To track chatbot usage, add this to your website:</p>
+            <div class="code-block">
+&lt;script&gt;
+    document.addEventListener('samChatbotMessage', function(e) {
+        // Log to Google Analytics
+        if (window.gtag) {
+            gtag('event', 'chatbot_interaction', {
+                'event_category': 'Chatbot',
+                'event_label': e.detail.message
+            });
+        }
+        
+        // Log to console
+        console.log('Chatbot interaction:', e.detail);
+    });
+&lt;/script&gt;
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Replace all [yourusername] with actual username
+        document.addEventListener('DOMContentLoaded', function() {
+            const codeBlocks = document.querySelectorAll('.code-block');
+            codeBlocks.forEach(block => {
+                block.textContent = block.textContent.replace(/\[yourusername\]/g, 'YOUR_GITHUB_USERNAME');
+            });
+        });
+    </script>
+</body>
+</html>
