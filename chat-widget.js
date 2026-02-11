@@ -1,7 +1,7 @@
 // Sam Chatbot Widget - JavaScript
 class SamChatbot {
     constructor() {
-        this.apiUrl = 'https://raw.githubusercontent.com/abhishekpatel111/sam/blob/main/data.json';
+        this.apiUrl = 'https://raw.githubusercontent.com/abhishekpatel111/sam/main/data.json';
         this.knowledgeBase = null;
         this.initialize();
     }
@@ -369,5 +369,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.samChatbot = new SamChatbot();
 
 });
+
 
 
