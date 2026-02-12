@@ -88,12 +88,12 @@ class SamChatbot {
     injectStyles() {
         // CSS is loaded externally from chat-widget.css
         // If you want to inject dynamically, uncomment below:
-        /*
+        
         const style = document.createElement('link');
         style.rel = 'stylesheet';
         style.href = 'https://abhishekpatel111.github.io/sam/chat-widget.css';
         document.head.appendChild(style);
-        */
+        
     }
 
     addEventListeners() {
@@ -369,6 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.samChatbot = new SamChatbot();
 
 });
+
 
 
 
