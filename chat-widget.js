@@ -46,11 +46,11 @@ class SamChatbot {
                            "• Project Managers",
                     
                     "contact": "📞 <strong>Contact Information:</strong><br>" +
-                              "• <strong>Email:</strong> contact@samikshatechsolutions.com<br>" +
-                              "• <strong>Phone:</strong> +91-XXXXXXXXXX<br>" +
-                              "• <strong>Address:</strong> Tech Park, Bangalore, India<br>" +
+                              "• <strong>Email:</strong> samikshatechsolutions@gmail.com<br>" +
+                              "• <strong>Phone:</strong> +91-9876924411<br>" +
+                              "• <strong>Address:</strong>Prayag Tech Park, Prayagraj, India<br>" +
                               "• <strong>Hours:</strong> Monday-Friday, 9:00 AM - 6:00 PM IST<br>" +
-                              "• <strong>Website:</strong> www.samikshatechsolutions.com",
+                              "• <strong>Website:</strong> www.samikshatechsolutions.github.io",
                     
                     "industries": "🏢 <strong>Industries We Serve:</strong><br>" +
                                  "• <strong>Retail & E-commerce:</strong> Omnichannel solutions, inventory management<br>" +
